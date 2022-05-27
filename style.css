@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  border: 1px solid black;
+  padding: 1.5em;
+  border-radius: 4px;
+  width: min(90vw, 30rem);
+  margin: 2em 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > label {
+  margin-bottom: 0.5em;
+}
+
+.input-container > input {
+  padding: 0.3em;
+  font-size: 1rem;
+}
+
+.error {
+  margin-top: 0.5em;
+  color: red;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.input-container.has-error > .error {
+  display: block;
+}
+
+.btn-submit {
+  margin-top: 1em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 4em;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 1.5em;
+  border-radius: 4px;
+  width: min(90vw, 30rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.name {
+  margin-bottom: 0.5em;
+}
+
+.btn-container {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5em;
+}
+
+.btn,
+.btn-submit {
+  padding: 0.3em 0.8em;
+}
