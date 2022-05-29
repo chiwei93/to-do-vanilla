@@ -11,9 +11,7 @@ const form = document.getElementById("form");
 
 function init() {
   // set up event listeners
-  form.addEventListener("submit", async (e) => {
-    await onFormSubmit(e);
-  });
+  form.addEventListener("submit", onFormSubmit);
 
   tasksList.addEventListener("click", onCompleteBtnClick);
 
