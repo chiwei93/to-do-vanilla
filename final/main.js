@@ -12,11 +12,8 @@ const form = document.getElementById("form");
 function init() {
   // set up event listeners
   form.addEventListener("submit", onFormSubmit);
-
   tasksList.addEventListener("click", onCompleteBtnClick);
-
   tasksList.addEventListener("click", onDeleteBtnClick);
-
   tasksList.addEventListener("click", onEditBtnClick);
 
   getTasks();
