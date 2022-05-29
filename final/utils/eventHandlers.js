@@ -24,8 +24,7 @@ export async function getTasks() {
       DomUtils.createNewTask(task, tasksList);
     });
   } catch (err) {
-    console.log("get tasks");
-    console.log(err);
+    alert(err.message || 'Internal server error');
   }
 }
 
@@ -70,7 +69,7 @@ export async function onFormSubmit(event) {
 
     formElement.reset();
   } catch (err) {
-    console.log(err);
+    alert(err.message || 'Internal server error');
   }
 }
 
@@ -98,7 +97,7 @@ export async function onCompleteBtnClick(event) {
       completeBtn.textContent = "Complete";
     }
   } catch (err) {
-    console.log(err);
+    alert(err.message || 'Internal server error');
   }
 }
 
@@ -116,7 +115,7 @@ export async function onDeleteBtnClick(event) {
       listItem.parentElement.removeChild(listItem);
     }
   } catch (err) {
-    console.log(err);
+    alert(err.message || 'Internal server error');
   }
 }
 
@@ -133,6 +132,6 @@ export async function onEditBtnClick(event) {
     document.getElementById("title").value = chosenEditedTask.title;
     document.getElementById("btn-submit").textContent = "Edit Task";
   } else {
-    console.log("task not found");
+    alert('Task not found');
   }
 }
