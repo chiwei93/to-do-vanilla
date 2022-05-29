@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="form">
+    <form class="form" id="form">
       <div class="input-container">
         <label for="title">Task title:</label>
-        <input type="text">
+        <input type="text" name="title" id="title">
         <p class="error">Error</p>
       </div>
 
@@ -20,7 +20,7 @@
 
     <h1>My Tasks</h1>
 
-    <ul class="list">
+    <ul class="list" id="tasks">
       <li class="item">
         <article class="card">
           <p class="content">
@@ -29,24 +29,9 @@
           </p>
 
           <div class="btn-container">
-            <button class="btn">Completed</button>
-            <button class="btn">Delete</button>
-            <button class="btn">Edit</button>
-          </div>
-        </article>
-      </li>
-
-      <li class="item">
-        <article class="card">
-          <p class="content">
-            <span class="name">Name: task name</span>
-            <span class="status">Status: completed</span>
-          </p>
-
-          <div class="btn-container">
-            <button class="btn">Completed</button>
-            <button class="btn">Delete</button>
-            <button class="btn">Edit</button>
+            <button class="btn" id="btn-complete">Completed</button>
+            <button class="btn" id="btn-delete">Delete</button>
+            <button class="btn" id="btn-edit">Edit</button>
           </div>
         </article>
       </li>
